@@ -1,0 +1,56 @@
+﻿/*
+ * Creado por SharpDevelop.
+ * Usuario: olive
+ * Fecha: 11/28/2025
+ * Hora: 6:31 PM
+ * 
+ * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
+ */
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace GItYSharp
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		public MainForm()
+		{
+			//
+			// The InitializeComponent() call is required for Windows Forms designer support.
+			//
+			InitializeComponent();
+			
+			//
+			// TODO: Add constructor code after the InitializeComponent() call.
+			//
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+
+    string usuarioCorrecto = "Robloxianas";
+    string contrasenaCorrecta = "1234567890";
+
+    if (txtUsario.Text == usuarioCorrecto && txtContraseña.Text == contrasenaCorrecta)
+    {
+        MessageBox.Show("Acceso concedido Añacedido proceseda PEpe", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        frmMenu menu = new frmMenu();
+        menu.Show();
+
+        this.Hide();
+    }
+    else
+    {
+        MessageBox.Show("Usuario o contraseña incorrectos ownraowdaoiwdsma 🙀🙀🙀🙀🙀", "Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
+}
+	
+		
+	}
+}
